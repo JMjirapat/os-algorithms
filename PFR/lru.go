@@ -56,6 +56,7 @@ func (l *LRU) Run() (page_fault int) {
 		} else {
 			l.MoveToBack(i)
 		}
+		l.Print()
 	}
 	return page_fault
 }
